@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_cradle">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtArduino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="20dp"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/switchOn"
+                    android:layout_width="270dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="ON"
+                    android:background="@drawable/cradle_on_button_shodow"
+                    android:layout_weight="0.50"
+                    android:textColor="#fdfdfe"
+                    android:textSize="@dimen/abc_dialog_padding_material" />
+
+
+                <Button
+                    android:id="@+id/auto_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Auto"/>
+
+                <Button
+                    android:id="@+id/switchOff"
+                    android:layout_width="270dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="OFF"
+                    android:background="@drawable/cradle_off_button_shadow"
+                    android:layout_weight="0.50"
+                    android:textColor="#fdfdfe"
+                    android:textSize="@dimen/abc_dialog_padding_material" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ToggleButton
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:text="New ToggleButton"
+            android:id="@+id/ledonoff"
+            android:layout_gravity="center|top"
+            android:background="@drawable/toggle_switch"
+            android:textOn=""
+            android:textOff="" />
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="270dp"
+            android:layout_height="340dp"
+            android:layout_marginTop="90dp"
+            android:layout_gravity="center|top" />
+
+        <ProgressBar
+            android:id="@+id/web_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

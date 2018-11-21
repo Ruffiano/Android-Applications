@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="actionMenuTextColor">@color/bpWhite</item>
+        <item name="android:actionMenuTextColor">@color/bpWhite</item>
+    </style>
+
+    <style name="AppToolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="background">@color/primary</item>
+        <item name="colorPrimary">@color/bpWhite</item>
+        <item name="android:textColor">@color/bpWhite</item>
+        <item name="displayOptions">showHome</item>
+    </style>
+
+    <style name="MyDatePicker">
+        <item name="bpMainColor1">@color/primary</item>
+        <item name="bpMainColor2">@color/circle_background</item>
+        <item name="bpAccentColor">@color/bpWhite</item>
+        <item name="bpMainTextColor">@color/bpWhite</item>
+        <item name="bpDoneTextColor">@color/done_text_color_normal</item>
+        <item name="bpLineColor">@color/bpWhite</item>
+        <item name="bpDoneBackgroundColor">@drawable/done_background_color</item>
+        <item name="bpSelectionAlpha">51</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/bpWhite</item>
+        <item name="android:textSize">20sp</item>
+        <item name="colorAccent">@color/bpWhite</item>
+        <item name="colorControlNormal">@color/bpWhite</item>
+        <item name="colorControlActivated">@color/bpWhite</item>
+    </style>
+</resources>

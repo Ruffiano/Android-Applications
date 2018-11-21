@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/wallper4">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+
+                <!--<EditText-->
+                    <!--android:id="@+id/login"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:hint="Login"-->
+                    <!--android:inputType="textEmailAddress" />-->
+
+
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/sans_serif"
+                    android:hint="Password"
+                    android:maxLength="4"
+                    android:inputType="numberPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/repeatPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/sans_serif"
+                    android:hint="Repeat Password"
+                    android:maxLength="4"
+                    android:inputType="numberPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="151dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/signBtn"
+                android:layout_width="111dp"
+                android:layout_height="111dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bottle5"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#fdfdfe"
+                android:textSize="@dimen/abc_dialog_padding_material" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="비밀번호 등록"
+            android:id="@+id/textView"
+            android:textSize="@dimen/abc_action_button_min_height_material"
+            android:textStyle="bold"
+            android:textColor="#5af00909"
+            android:layout_gravity="center_horizontal|top" />
+
+
+    </FrameLayout>
+</LinearLayout>

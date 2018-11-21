@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_cradle">
+
+        <FrameLayout
+            android:layout_width="256dp"
+            android:layout_height="211dp"
+            android:layout_gravity="center"
+            android:background="@drawable/timetable_button_shadow"
+            android:visibility="invisible"></FrameLayout>
+
+        <TextView
+            android:id="@+id/timeLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Time Table"
+            android:textColor="@color/bpWhite"
+            android:textSize="30sp"
+            android:visibility="visible" />
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:src="@drawable/ic_action_alarm_add"
+                app:layout_anchor="@id/recycler_view"
+                app:layout_anchorGravity="bottom|center"
+                app:layout_behavior="com.example.user.demo.utils.FABScrollBehavior" />
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>
